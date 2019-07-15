@@ -1,0 +1,32 @@
+import java.util.*;
+class hello
+{
+    public static void main (String[] args)  
+    { 
+       Scanner sc=new Scanner(System.in);
+       int n=1;
+       while(true)
+       {
+       System.out.println("ENTER NUMBER OF ROWS");
+       int num=sc.nextInt();
+       for (int i = 0; i < num; i++)
+       {
+    	  
+         for (int j = num; j >=i; j--)
+         {
+        	 System.out.print(" ");
+        	 
+         }
+         n=1;
+         for(int k=0;k<=i;k++)
+         {
+        	 System.out.print(" "+n);
+        	 n=(n*(i-k))/(k+1); // upar wale ko pehli bar mein 0 krna hai kaise v
+        	 
+         }
+         System.out.println();
+       }
+       }
+           
+    }
+}
